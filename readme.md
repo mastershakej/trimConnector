@@ -8,14 +8,13 @@ It is designed to handle common API idiosyncrasies, such as nested object parsin
 
 * **Robust Object Parsing:** Automatically extracts readable names from nested objects (e.g., \[Record\] becomes "Document", \[Location\] becomes "John Smith").  
 * **Smart Endpoint Selection:** Forces the use of the StreamSearch endpoint for Record searches to ensure rich metadata is returned instead of empty index data.  
-* **Date Handling:** Correctly parses ISO 8601 dates with timezones (e.g., 2025-04-06T12:00:00Z) into Power BI DateTime columns.  
-* **"Twin Property" Fix:** automatically resolves issues where fields like DateLastUpdated return null due to conflicts between Index and Metadata properties.  
+* **Date Handling:** Correctly parses ISO 8601 dates with timezones (e.g., 2025-04-06T12:00:00Z) into Power BI DateTime columns.   
 * **Location Detail Expansion:** Automatically expands Location objects to include Email, Phone, Organization, and Login details.
 
 ## **Installation**
 
 1. **Download the Connector:**  
-   * Download the TRIMConnector.mez file from the [Releases](https://www.google.com/search?q=%23) page (or compile it yourself, see below).  
+   * Download the TRIMConnector.mez file from the [Releases](https://github.com/mastershakej/trimConnector/releases/tag/latest) page (or compile it yourself, see below).  
 2. **Deploy to Power BI:**  
    * Navigate to your documents folder: C:\\Users\\\[YourName\]\\Documents\\Power BI Desktop\\Custom Connectors.  
    * If this folder does not exist, create it.  
